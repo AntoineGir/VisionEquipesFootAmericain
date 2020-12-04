@@ -26,9 +26,9 @@ namespace VisionEquipesFootAmericain
         public MainWindow(DaoEquipe thedaoEquipe, DaoJoueur theDaoJoueur, DaoPays theDaoPays, DaoPoste theDaoPoste)
         {
             InitializeComponent();
-            //Globale.DataContext = new viewModel.ViewModelJoueur(theDaoJoueur, thedaoEquipe, theDaoPays, theDaoPoste);
-            
-            
+            Globale.DataContext = new viewModel.ViewModelJoueur(thedaoEquipe, theDaoJoueur, theDaoPays, theDaoPoste);
         }
+
+
     }
 }

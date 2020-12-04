@@ -19,5 +19,10 @@ namespace ModelLayer.Business
         }
 
 
+        public override string ToString()
+        {
+            return this.Nom;
+        }
+
     }
 }

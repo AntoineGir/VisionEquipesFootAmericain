@@ -22,9 +22,12 @@ namespace ModelLayer.Business
             Escouade = escouade;
         }
 
-        public Poste()
-        {
+        public Poste(){        }
 
+        public override string ToString()
+        {
+            return this.Nom;
         }
+
     }
 }

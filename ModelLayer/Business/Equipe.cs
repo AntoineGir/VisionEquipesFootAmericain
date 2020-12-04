@@ -16,7 +16,7 @@ namespace ModelLayer.Business
         public DateTime DateCreation { get => dateCreation; set => dateCreation = value; }
         public string Nom { get => nom; set => nom = value; }
         public int Id { get => id; set => id = value; }
-        internal List<Joueur> Joueurs { get => joueurs; set => joueurs = value; }
+        public List<Joueur> Joueurs { get => joueurs; set => joueurs = value; }
 
         public Equipe(int id = 0, string nom = "", DateTime dateCreation= new DateTime(),   List<Joueur> joueurs =null)
         {
@@ -28,5 +28,10 @@ namespace ModelLayer.Business
         }
 
         public Equipe() { }
+
+        public override string ToString()
+        {
+            return this.Nom;
+        }
     }
 }

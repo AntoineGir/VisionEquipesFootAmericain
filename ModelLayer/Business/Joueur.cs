@@ -17,8 +17,8 @@ namespace ModelLayer.Business
         public DateTime DateEntree { get => dateEntree; set => dateEntree = value; }
         public int Id { get => id; set => id = value; }
         public DateTime DateNaissance { get => dateNaissance; set => dateNaissance = value; }
-        internal Pays IdPays { get => idPays; set => idPays = value; }
-        internal Poste IdPoste { get => idPoste; set => idPoste = value; }
+        public Pays IdPays { get => idPays; set => idPays = value; }
+        public Poste IdPoste { get => idPoste; set => idPoste = value; }
 
         public Joueur(string nom="", DateTime dateEntree= new DateTime(), int id=0, DateTime dateNaissance = new DateTime(), Pays idPays=null, Poste idPoste=null )
         {
@@ -31,5 +31,10 @@ namespace ModelLayer.Business
         }
 
         public Joueur() { }
+
+        public override string ToString()
+        {
+            return this.Nom;
+        }
     }
 }

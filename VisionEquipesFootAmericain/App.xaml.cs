@@ -24,7 +24,7 @@ namespace VisionEquipesFootAmericain
 
 
 
-        /*private void Application_Startup(object sender, StartupEventArgs e)
+        private void Application_Startup(object sender, StartupEventArgs e)
         {
             thedbal = new Dbal("dsfootamericain");
             theDaoPays = new DaoPays(thedbal);
@@ -35,7 +35,7 @@ namespace VisionEquipesFootAmericain
             //et on utilise la méthode Show() de notre objet fenêtre pour afficher la fenêtre
             //exemple: MainWindow lafenetre = new MainWindow(); (et on y passe en paramètre Dbal et Dao au besoin)
             wnd.Show();
-        }*/
+        }
 
         private void Application_DispatcherUnhandledException(object sender, System.Windows.Threading.DispatcherUnhandledExceptionEventArgs e)
         {
